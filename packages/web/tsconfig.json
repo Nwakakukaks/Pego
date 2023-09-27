@@ -1,20 +1,30 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./*"]
+      "@components/*": ["components/*"],
+      "@core/*": ["core/*"],
+      "@modules/*": ["modules/*"],
+      "@services/*": ["services/*"],
+      "@handlers/*": ["handlers/*"],
+      "@styles/*": ["styles/*"],
+      "@locales/*": ["locales/*"],
+      "@templates/*": ["contract-templates/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
