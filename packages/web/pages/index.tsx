@@ -1,118 +1,311 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import type { NextPage } from 'next';
+import styles from '../styles/Home.module.scss';
+import PageHead from '../components/PageHead/PageHead';
+import { Button, Col, Container, Row, Card } from 'react-bootstrap';
+import Navigation from 'components/Navigation/Navigation';
+import Footer from 'components/Footer/Footer';
+import SpeedIcon from '@mui/icons-material/Speed';
+import CodeIcon from '@mui/icons-material/Code';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
-const inter = Inter({ subsets: ['latin'] })
+const MainLanding: NextPage = () => {
+  const handleEnter = async () => {
+    location.href = '/dashboard/';
+  };
 
-export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className={styles.container}>
+      <PageHead />
+      <Navigation />
+      <main className={styles.main}>
+        <Container fluid>
+          <Row className={styles.intro}>
+            <Col md={1} sm={12}></Col>
+            <Col md={6} sm={12}>
+              <div className={styles.introContainer}>
+                <h1>
+                  <div className={styles.mainTitle}>
+                    Simplified way to build and deploy smart contracts
+                  </div>
+                </h1>
+                <div className={styles.subtitle}>
+                  Create . Deploy . View Insights
+                </div>
+                <p>
+                  Blocks is an advanced blockchain app manager that lets
+                  you create, deploy, manage and understand usage for your smart
+                  contracts on OPTIMISM, BASE, ZORA and MODE blockchain.
+                </p>
+                <div style={{ paddingTop: 30 }}>
+                  <Button
+                    className={styles.buttonHighlight}
+                    onClick={() => handleEnter()}
+                  >
+                    Try the Beta
+                  </Button>
+
+                  <Button className={styles.buttonDefault} href="#learn-more">
+                    Learn more
+                  </Button>
+                </div>
+              </div>
+            </Col>
+            <Col md={5} sm={12}></Col>
+          </Row>
+        </Container>
+        <Container>
+          <div
+            id="learn-more"
+            style={{ background: '#ffffff', borderRadius: '20px' }}
+            className="mt-5 mb-5"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+            <Row className="section-container advanced-section">
+              <Col lg={7} md={12} sm={12}>
+                <div className="feature-image">
+                  <img
+                    src="/assets/images/homeblock.png"
+                    alt="screenshot"
+                    className="framed-image"
+                  />
+                </div>
+              </Col>
+              <Col lg={5} md={12} sm={12}>
+                <div className="advanced-description">
+                  <h2>Integrated platform for creating and managing dapps</h2>
+                  <h3 className="muted">
+                    Just connect your wallet and you're good to go.
+                  </h3>
+                  <p className="paragraph">
+                    Blocks makes dapp creation a breeze. Create smart
+                    contracts using preset templates without code, or create
+                    your own custom template. Import existing contracts, manage
+                    dapps centrally, and link multiple wallets. Leverage robust
+                    analytics for insightful app performance.
+                  </p>
+                </div>
+               
+              </Col>
+            </Row>
+          </div>
+        </Container>
+        <Container>
+          <Row
+            id="templates"
+            className="section-container"
+            style={{ minHeight: 'auto' }}
+          >
+            <Col md={12} sm={12}>
+              <h2 className="section-heading">Build with No Code Templates</h2>
+              <p className="section-subheading">
+                Build your contract from a growing collection of preset
+                templates you can use and customize
+              </p>
+            </Col>
+          </Row>
+          <Row className="feature-cards">
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Token</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  ERC20 standard token contract used for transactions.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>NFT</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  ERC721 standard NFT contract to house a collection of unique
+                  assets.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>One-Time Subscription</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  Accept one time payments for product subscription.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Supply Chain Management</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  Track and verify products at each stage of a supply chain.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="section-container" style={{ minHeight: 'auto' }}>
+            <Col md={12} sm={12}>
+              <p className="section-subheading">
+                ...and many more coming soon.
+              </p>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row
+            id="features"
+            className="section-container"
+            style={{ minHeight: 'auto' }}
+          >
+            <Col md={12} sm={12}>
+              <h2 className="section-heading">More Features</h2>
+            </Col>
+          </Row>
+          <Row className="feature-cards">
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card">
+              <Card body>
+                <CodeIcon className="feature-icon" />
+                <Card.Title>Custom Code</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Can't find the right template? Write your own code!
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card">
+              <Card body>
+                <ArrowDownwardIcon className="feature-icon" />
+                <Card.Title>Contract Import</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  Import existing contracts which have been previously deployed
+                  so you can manage them together.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card">
+              <Card body>
+                <SpeedIcon className="feature-icon" />
+                <Card.Title>Dashboard & Analytics</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  See details and statistics for your deployed contracts on the
+                  blockchain.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <Row
+            id="pricing"
+            className="section-container"
+            style={{ minHeight: 'auto', marginTop: '60px' }}
+          >
+            <Col md={12} sm={12}>
+              <h2 className="section-heading">Pricing</h2>
+              <h4 className="usability-subtitle">
+                We keep things free for as much as we can
+              </h4>
+            </Col>
+          </Row>
+          <Row className="pricing-cards">
+            <Col xs={12} sm={6} md={6} lg={4} className="pricing-card">
+              <Card body>
+                <Card.Title>
+                  <p>Beta Preview</p>
+                </Card.Title>
+                <hr />
+                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
+                  <h6>Available Now</h6>
+                </Card.Subtitle>
+                <Card.Subtitle className="mb-2">
+                  <ul className="pricing-list">
+                    <li>Unlimited apps</li>
+                    <li>Unlimited linked wallets</li>
+                    <li>Analytics Dashboard</li>
+                  </ul>
+                  <hr />
+                  Features are ongoing development and experimental.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={4} className="pricing-card">
+              <Card body>
+                <Card.Title>
+                  <p>Standard Free</p>
+                </Card.Title>
+                <hr />
+                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
+                  <h6>Coming Soon</h6>
+                </Card.Subtitle>
+                <Card.Subtitle className="mb-2">
+                  <ul className="pricing-list">
+                    <li>Up to 3 apps</li>
+                    <li>Up to 6 linked wallets</li>
+                    <li>Basic Analytics</li>
+                  </ul>
+                  <hr />
+                  Stable release.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={4} className="pricing-card">
+              <Card body>
+                <Card.Title>
+                  <p>Pro</p>
+                </Card.Title>
+                <hr />
+                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
+                  <h6>Coming Soon</h6>
+                </Card.Subtitle>
+                <Card.Subtitle className="mb-2">
+                  <ul className="pricing-list">
+                    <li>Up to 10 apps</li>
+                    <li>Up to 20 linked wallets</li>
+                    <li>Advanced Analytics</li>
+                  </ul>
+                  <hr />
+                  Stable release.
+                  <br />
+                  Pricing announced soon.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <div id="beta" style={{ background: '#c4e2d2', marginTop: '120px' }}>
+            <Row className="section-container advanced-section">
+              <Col md={1} sm={1}></Col>
+              <Col md={5} sm={5}>
+                <div className="advanced-description">
+                  <h2>Early Access Beta Preview</h2>
+                  <p className="paragraph">
+                    Be among the first to experience our beta preview and
+                    experience a new way of creating and deploying smart
+                    contracts. We welcome your valuable feedback as it can
+                    significantly shape Block's future.{' '}
+                  </p>
+                </div>
+                <div>
+                  <Button
+                    className={styles.buttonHighlight}
+                    onClick={() => handleEnter()}
+                  >
+                    Try the Beta
+                  </Button>
+                </div>
+              </Col>
+              <Col md={5} sm={5}>
+                <div className="illustration">
+                  <img src="/assets/illustrations/37.svg" alt="" />
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Container>
+        <Footer />
+      </main>
+    </div>
+  );
+};
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+export const getServerSideProps = async (context: any) => {
+  return {
+    props: {},
+  };
+};
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default MainLanding;
