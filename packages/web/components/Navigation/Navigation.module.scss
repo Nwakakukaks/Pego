@@ -1,0 +1,55 @@
+.nav {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #091417;
+  height: 70px;
+
+  a {
+    color: white !important;
+  }
+
+  .account {
+    padding: 20px;
+    width: 200px;
+    display: block;
+  }
+
+  .linkItem {
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .linkItemBold {
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: black !important;
+  }
+  .linkItemBoldWhite {
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .brand {
+    font-size: 16px;
+
+    img {
+      height: 35px;
+    }
+  }
+}
+
+.navTransparent {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(0 0 0 / 28%);
+  height: 70px;
+  box-shadow: 0 4px 2px -3px #e1e1e1;
+}

@@ -1,0 +1,32 @@
+.selection {
+  margin: 10px 0;
+  padding: 12px;
+  border: solid 1px #ebebeb;
+
+  a {
+    cursor: pointer;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .muted {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+}
+
+.selection:hover {
+  a:hover {
+    span {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

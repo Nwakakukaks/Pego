@@ -1,0 +1,48 @@
+.wrapper {
+  padding: 20px 25px;
+  height: 70px;
+  // background-color: white;
+  // box-shadow: 0 4px 2px -3px #e1e1e1;
+}
+
+.buttonsContainer {
+  float: right;
+}
+
+.inputBox {
+  max-width: 80%;
+}
+
+.username {
+  color: #ffffff;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.avatar {
+  border-radius: 20%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.description {
+  color: #a0a0a0;
+  font-size: 12px;
+}

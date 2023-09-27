@@ -1,7 +1,7 @@
 {
-    "name": "pegodeployer-contract-templates",
+    "name": "pegora-contract-templates",
     "version": "1.0.0",
-    "description": "Smart Contracrt Templates for pego deployer",
+    "description": "Smart Contracrt Templates for pegora",
     "main": "index.ts",
     "types": "index.d.ts",
     "scripts": {
