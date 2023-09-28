@@ -1,16 +1,17 @@
-import type { NextPage } from 'next';
-import styles from '../styles/Home.module.scss';
-import PageHead from '../components/PageHead/PageHead';
-import { Button, Col, Container, Row, Card } from 'react-bootstrap';
-import Navigation from 'components/Navigation/Navigation';
-import Footer from 'components/Footer/Footer';
-import SpeedIcon from '@mui/icons-material/Speed';
-import CodeIcon from '@mui/icons-material/Code';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+/* eslint-disable react/no-unescaped-entities */
+import type { NextPage } from "next";
+import styles from "../styles/Home.module.scss";
+import PageHead from "../components/PageHead/PageHead";
+import { Button, Col, Container, Row, Card } from "react-bootstrap";
+import Navigation from "components/Navigation/Navigation";
+import Footer from "components/Footer/Footer";
+import SpeedIcon from "@mui/icons-material/Speed";
+import CodeIcon from "@mui/icons-material/Code";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const MainLanding: NextPage = () => {
   const handleEnter = async () => {
-    location.href = '/dashboard/';
+    location.href = "/dashboard/";
   };
 
   return (
@@ -24,18 +25,19 @@ const MainLanding: NextPage = () => {
             <Col md={6} sm={12}>
               <div className={styles.introContainer}>
                 <h1>
-                  <div className={styles.mainTitle}>
-                    Simplified way to build and deploy smart contracts
-                  </div>
+                  <div className={styles.mainTitle}>Pegora</div>
                 </h1>
                 <div className={styles.subtitle}>
-                  Create . Deploy . View Insights
+                  Streamlined Smart Contract Development and Deployment Solution
                 </div>
-                <p>
-                  Blocks is an advanced blockchain app manager that lets
-                  you create, deploy, manage and understand usage for your smart
-                  contracts on OPTIMISM, BASE, ZORA and MODE blockchain.
+                <p style={{ color: "#888888" }}>
+                  Pegora is a blockchain application manager designed to provide
+                  you with comprehensive control over your smart contracts
+                  within the Pego Network ecosystem. With Pegora, you gain the
+                  capability to seamlessly create, deploy, monitor, and gain
+                  valuable insights for your smart contracts.
                 </p>
+
                 <div style={{ paddingTop: 30 }}>
                   <Button
                     className={styles.buttonHighlight}
@@ -45,7 +47,7 @@ const MainLanding: NextPage = () => {
                   </Button>
 
                   <Button className={styles.buttonDefault} href="#learn-more">
-                    Learn more
+                    Demo
                   </Button>
                 </div>
               </div>
@@ -53,38 +55,27 @@ const MainLanding: NextPage = () => {
             <Col md={5} sm={12}></Col>
           </Row>
         </Container>
+        
         <Container>
           <div
             id="learn-more"
-            style={{ background: '#ffffff', borderRadius: '20px' }}
-            className="mt-5 mb-5"
+            style={{
+              background: "#f1faee",
+              borderRadius: "10px",
+      
+            }}
+            className=""
           >
             <Row className="section-container advanced-section">
-              <Col lg={7} md={12} sm={12}>
-                <div className="feature-image">
-                  <img
-                    src="/assets/images/homeblock.png"
-                    alt="screenshot"
-                    className="framed-image"
-                  />
-                </div>
-              </Col>
-              <Col lg={5} md={12} sm={12}>
-                <div className="advanced-description">
-                  <h2>Integrated platform for creating and managing dapps</h2>
-                  <h3 className="muted">
-                    Just connect your wallet and you're good to go.
-                  </h3>
-                  <p className="paragraph">
-                    Blocks makes dapp creation a breeze. Create smart
-                    contracts using preset templates without code, or create
-                    your own custom template. Import existing contracts, manage
-                    dapps centrally, and link multiple wallets. Leverage robust
-                    analytics for insightful app performance.
-                  </p>
-                </div>
-               
-              </Col>
+              <div className="">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                  title="YouTube video player"
+                  frameBorder="0"
+                ></iframe>
+              </div>
             </Row>
           </div>
         </Container>
@@ -92,10 +83,10 @@ const MainLanding: NextPage = () => {
           <Row
             id="templates"
             className="section-container"
-            style={{ minHeight: 'auto' }}
+            style={{ minHeight: "auto" }}
           >
             <Col md={12} sm={12}>
-              <h2 className="section-heading">Build with No Code Templates</h2>
+              <h2 className="section-heading">Our Features</h2>
               <p className="section-subheading">
                 Build your contract from a growing collection of preset
                 templates you can use and customize
@@ -137,7 +128,7 @@ const MainLanding: NextPage = () => {
               </Card>
             </Col>
           </Row>
-          <Row className="section-container" style={{ minHeight: 'auto' }}>
+          <Row className="section-container" style={{ minHeight: "auto" }}>
             <Col md={12} sm={12}>
               <p className="section-subheading">
                 ...and many more coming soon.
@@ -149,7 +140,7 @@ const MainLanding: NextPage = () => {
           <Row
             id="features"
             className="section-container"
-            style={{ minHeight: 'auto' }}
+            style={{ minHeight: "auto" }}
           >
             <Col md={12} sm={12}>
               <h2 className="section-heading">More Features</h2>
@@ -191,7 +182,7 @@ const MainLanding: NextPage = () => {
           <Row
             id="pricing"
             className="section-container"
-            style={{ minHeight: 'auto', marginTop: '60px' }}
+            style={{ minHeight: "auto", marginTop: "60px" }}
           >
             <Col md={12} sm={12}>
               <h2 className="section-heading">Pricing</h2>
@@ -207,7 +198,7 @@ const MainLanding: NextPage = () => {
                   <p>Beta Preview</p>
                 </Card.Title>
                 <hr />
-                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
+                <Card.Subtitle className="mb-4" style={{ textAlign: "center" }}>
                   <h6>Available Now</h6>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
@@ -227,7 +218,7 @@ const MainLanding: NextPage = () => {
                   <p>Standard Free</p>
                 </Card.Title>
                 <hr />
-                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
+                <Card.Subtitle className="mb-4" style={{ textAlign: "center" }}>
                   <h6>Coming Soon</h6>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
@@ -247,7 +238,7 @@ const MainLanding: NextPage = () => {
                   <p>Pro</p>
                 </Card.Title>
                 <hr />
-                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
+                <Card.Subtitle className="mb-4" style={{ textAlign: "center" }}>
                   <h6>Coming Soon</h6>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
@@ -266,7 +257,7 @@ const MainLanding: NextPage = () => {
           </Row>
         </Container>
         <Container>
-          <div id="beta" style={{ background: '#c4e2d2', marginTop: '120px' }}>
+          <div id="beta" style={{ background: "#c4e2d2", marginTop: "120px" }}>
             <Row className="section-container advanced-section">
               <Col md={1} sm={1}></Col>
               <Col md={5} sm={5}>
@@ -276,7 +267,7 @@ const MainLanding: NextPage = () => {
                     Be among the first to experience our beta preview and
                     experience a new way of creating and deploying smart
                     contracts. We welcome your valuable feedback as it can
-                    significantly shape Block's future.{' '}
+                    significantly shape Block's future.{" "}
                   </p>
                 </div>
                 <div>

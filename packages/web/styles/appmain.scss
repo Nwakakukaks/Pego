@@ -3,6 +3,10 @@
  For cross browser compatible styling hide Firefox's marker by setting summary { display: block }
  and Chrome and Safari's marker by setting ::-webkit-details-marker {display: none;}
 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 summary {
   display: block;
   cursor: pointer;

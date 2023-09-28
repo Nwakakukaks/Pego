@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -20,12 +24,12 @@ a {
 }
 
 .btn-primary {
-  background-color: #0e2a3a;
+  background-color: #fcb9b2;
   border-color: white;
 }
 .btn-primary:hover {
-  background-color: #0d3246;
-  border-color: #0d3246;
+  background-color: #ff9f1c;
+  border-color: #ff9f1c;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -39,8 +43,8 @@ a {
   border-color: #0e2a3a;
 }
 .btn-outline-primary:hover {
-  background-color: #0d3246;
-  border-color: #0d3246;
+  background-color: #ff9f1c;
+  border-color: #ff9f1c;
 }
 
 .nav-link,

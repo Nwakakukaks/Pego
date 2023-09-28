@@ -1,0 +1,26 @@
+.messageContainer {
+    padding: 40px;
+    height: 100vh;
+    overflow-x: scroll;
+    padding-bottom: 110px;
+    padding-top: 80px;
+  }
+  
+  .loadingText {
+    text-align: center;
+    font-weight: bold;
+    color: #5d4d67;
+  }
+  
+  .actionButtonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 32px;
+    // justify-content: space-between;
+  
+    button {
+      margin: 8px;
+    }
+  }
+  

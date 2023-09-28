@@ -3,11 +3,11 @@
 
 .main {
   width: 100%;
-  background-color: #091417;
+  background-color: #252422;
 }
 
 .intro {
-  background-color: #091417;
+  background-color: #252422;
   height: 650px;
 }
 
@@ -46,7 +46,7 @@
 
 .mainTitle {
   -webkit-box-decoration-break: clone;
-  background-image: url(https://images.unsplash.com/photo-1687084626949-93a5e1555fcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-image: linear-gradient(90deg, rgb(223, 103, 103), rgb(252, 192, 79));
   background-size: 50% auto;
   background-position: 0% 5%;
   -webkit-background-clip: text;
@@ -54,15 +54,20 @@
   color: transparent;
   --tw-saturate: saturate(3.5);
   filter: var(--tw-filter);
-  font-size: 52px;
+  font-size: 62px;
   font-weight: 700;
 }
 
+
 .subtitle {
-  color: white;
   font-family: 'Nunito', sans-serif;
   font-size: 30px;
+  margin-bottom: 15px;
+  background: linear-gradient(90deg, rgb(223, 103, 103), rgb(252, 192, 79));
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 
 @media (max-width: 600px) {
   .title {
@@ -82,7 +87,7 @@
 .buttonDefault,
 .buttonDefault:active,
 .buttonDefault:focus {
-  background-color: #0e2a3a;
+  background-color: #ff9500;
   border: none;
   margin-bottom: 10px;
 }

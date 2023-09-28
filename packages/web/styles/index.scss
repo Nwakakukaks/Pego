@@ -1,6 +1,13 @@
 // -----------
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Your custom CSS styles here */
+
+
 .section-container {
-  padding: 80px 0;
+  padding: 50px 0;
   text-align: center;
   margin: 0 auto;
   max-width: 1140px;
@@ -212,7 +219,7 @@
 
 .feature-icon {
   font-size: 40px !important;
-  color: #a97fd9;
+  color: #ff9b54;
   margin-bottom: 8px;
 }
 
@@ -224,9 +231,11 @@
 
 .section-heading {
   color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 .section-subheading {
-  color: white;
+  color: #888888;
 }
 
 .pricing-cards {
@@ -244,9 +253,9 @@
   transition: 0.3s;
 
   .card {
-    background-color: #091417;
+    background-color: #1d1914;
     border: solid 1px;
-    border-top: solid 3px pink;
+    border-top: solid 3px #ff9b54;
 
     .card-body {
       text-align: left;
@@ -288,7 +297,7 @@
 
 .pricing-icon {
   font-size: 40px !important;
-  color: #a97fd9;
+  color: #000;
   margin-bottom: 8px;
 }
 
@@ -304,9 +313,9 @@
 
 .template {
   .card {
-    background-color: #fff;
+    background-color: #f1faee;
   }
   .card-title {
-    color: #b5608d;
+    color: #ff9b54;
   }
 }
