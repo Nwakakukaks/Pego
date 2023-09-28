@@ -1,11 +1,11 @@
 export const en = {
   network: {
-    connectWalletTitle: 'Pegora › PEGO NETWORK',
-    connectWalletSubtitle: 'Connect your wallet to begin.',
+    connectWalletTitle: 'Pegora',
+    connectWalletSubtitle: 'Connect wallet to begin.',
     connectWalletDescription:
-      'You are one step away from accessing Pegora. Connect your Metamask wallet to get started.',
+      'Welcome to Pegora Protocol. Sign in with Metamask wallet to get started.',
     connectButtonLabel: 'Connect Metamask',
     connectButtonLabelWC: 'Sign In WorldCoin',
-    logoIcon: '/assets/pegora/networks.png',
+    logoIcon: '/assets/pegora/pego.png',
   },
 };

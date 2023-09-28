@@ -9,10 +9,7 @@ const Footer = () => {
         <Row>
           <Col lg={4} md={4}>
             <div className={styles.brand}>
-              <img
-                src="/assets/blocks/logo.png"
-                alt="logo"
-              />
+              <p>Pegora</p>
             </div>
             <p className={styles.appDescription}>
               Pegora is a blockchain app manager that lets you create,

@@ -43,7 +43,7 @@ const MainLanding: NextPage = () => {
                     className={styles.buttonHighlight}
                     onClick={() => handleEnter()}
                   >
-                    Try the Beta
+                    Launch Beta
                   </Button>
 
                   <Button className={styles.buttonDefault} href="#learn-more">
@@ -60,9 +60,9 @@ const MainLanding: NextPage = () => {
           <div
             id="learn-more"
             style={{
-              background: "#f1faee",
+              background: "#eae0d5",
               borderRadius: "10px",
-      
+              marginBottom: '30px'
             }}
             className=""
           >
@@ -70,7 +70,7 @@ const MainLanding: NextPage = () => {
               <div className="">
                 <iframe
                   width="100%"
-                  height="315"
+                  height="400"
                   src="https://www.youtube.com/embed/VIDEO_ID_HERE"
                   title="YouTube video player"
                   frameBorder="0"
@@ -257,7 +257,7 @@ const MainLanding: NextPage = () => {
           </Row>
         </Container>
         <Container>
-          <div id="beta" style={{ background: "#c4e2d2", marginTop: "120px" }}>
+          <div id="beta" style={{ background: "#eae0d5", marginTop: "120px" }}>
             <Row className="section-container advanced-section">
               <Col md={1} sm={1}></Col>
               <Col md={5} sm={5}>

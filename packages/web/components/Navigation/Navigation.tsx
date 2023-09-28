@@ -11,7 +11,7 @@ const Navigation = () => {
     <>
       <Navbar fixed="top" className={styles.nav} collapseOnSelect expand="sm">
         <Navbar.Brand className={styles.brand} href="/">
-          <img src="/assets/blocks/logo.png" alt="logo" />
+          <p className='logotext'>Pegora</p>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbar-scroll"
