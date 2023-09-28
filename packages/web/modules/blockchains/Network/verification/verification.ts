@@ -3,10 +3,8 @@ import Web3 from 'web3';
 
 // Define RPC endpoints for each network
 const rpcEndpoints: { [network: string]: string } = {
-  optimism: 'https://goerli.optimism.io',
-  base: 'https://base-goerli.public.blastapi.io',
-  zora: 'https://testnet.rpc.zora.energy/',
-  mode: 'https://sepolia.mode.network',
+  pegomainnet: 'https://pegorpc.com',
+  pegotestnet: 'https://rpc.pegotest.net/',
   // Add more networks here as needed
 };
 
@@ -66,7 +64,7 @@ const getNetworkFromChainId = (chainId: string): string => {
     case '919':
       return 'mode';
     case '420':
-      return 'optimism';
+      return 'pegomainnet';
     default:
       return '';
   }

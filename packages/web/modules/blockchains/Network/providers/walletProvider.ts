@@ -47,9 +47,9 @@ export const getWallet = async (): Promise<Wallet | null> => {
 };
 
 export const getNetwork = (): Network => {
-  return window.ethereum.networkVersion === '420'
+  return window.ethereum.networkVersion === '20201022'
     ? Network.PegoMainnet
-    : window.ethereum.networkVersion === '84531'
+    : window.ethereum.networkVersion === '123456'
     ? Network.PegoTestnet
     : Network.Unknown
     
@@ -82,10 +82,10 @@ export const getExplorerAddressUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.PegoMainnet) {
-    return `https://blockscout.com/PegoMainnet/goerli/address/${hash}`;
+    return `https://scan.pego.network/address/${hash}`;
   }
   if (environment === Environments.PegoTestnet) {
-    return `https://goerli.PegoTestnetscan.org/address/${hash}`;
+    return `https://scan.pegotest.net/address/${hash}`;
   }
   return null;
 };
@@ -95,10 +95,10 @@ export const getExplorerTxUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.PegoMainnet) {
-    return `https://blockscout.com/PegoMainnet/goerli/tx/${hash}`;
+    return `https://scan.pego.network/tx/${hash}`;
   }
   if (environment === Environments.PegoTestnet) {
-    return `https://goerli.PegoTestnetscan.org/tx/${hash}`;
+    return `https://scan.pegotest.net/tx/${hash}`;
   }
   return null;
 };
