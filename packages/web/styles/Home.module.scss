@@ -1,0 +1,88 @@
+.container {
+}
+
+.main {
+  width: 100%;
+  background-color: #091417;
+}
+
+.intro {
+  background-color: #091417;
+  height: 650px;
+}
+
+.introContainer {
+  padding-top: 180px;
+
+  p {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+  }
+}
+
+.introImageContainer {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.introImage {
+  width: 100%;
+  padding-top: 130px;
+}
+
+.demoContainer {
+  margin-top: 268px;
+  margin-bottom: 156px;
+  text-align: center;
+}
+
+.demoTitle {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.mainTitle {
+  -webkit-box-decoration-break: clone;
+  background-image: url(https://images.unsplash.com/photo-1687084626949-93a5e1555fcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-size: 50% auto;
+  background-position: 0% 5%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  --tw-saturate: saturate(3.5);
+  filter: var(--tw-filter);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 48px;
+  }
+}
+
+.buttonHighlight,
+.buttonHighlight:active,
+.buttonHighlight:focus {
+  background-color: white;
+  color: black;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.buttonDefault,
+.buttonDefault:active,
+.buttonDefault:focus {
+  background-color: #0e2a3a;
+  border: none;
+  margin-bottom: 10px;
+}

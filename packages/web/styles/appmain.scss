@@ -1,0 +1,182 @@
+/*
+ Only custom marker for summary/details
+ For cross browser compatible styling hide Firefox's marker by setting summary { display: block }
+ and Chrome and Safari's marker by setting ::-webkit-details-marker {display: none;}
+*/
+summary {
+  display: block;
+  cursor: pointer;
+  outline: 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh !important;
+  width: 360px;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+  padding: 0;
+  background-color: #201626;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  min-height: 100vh !important;
+  z-index: 100;
+  padding: 20px;
+  color: white;
+}
+
+#page-content-wrapper {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  // background-color: #25253e;
+  // color: white;
+  background-color: #f6f6f6;
+  color: #060606;
+}
+.page-content {
+  padding: 32px;
+
+  h3 {
+    margin-bottom: 32px;
+  }
+}
+
+.tree-nav {
+  margin-top: 20px;
+}
+
+.tree-nav__item {
+  display: block;
+  white-space: nowrap;
+  color: #ccc;
+  position: relative;
+}
+.tree-nav__item.is-expandable::before {
+  border-left: 1px solid #333;
+  content: '';
+  height: 100%;
+  left: 0.8rem;
+  position: absolute;
+  top: 2.4rem;
+  height: calc(100% - 2.4rem);
+}
+.tree-nav__item .tree-nav__item {
+  margin-left: 2.4rem;
+}
+.tree-nav__item.is-expandable[open] > .tree-nav__item-title::before {
+  font-family: 'ionicons';
+  transform: rotate(90deg);
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title {
+  padding-left: 2.4rem;
+}
+.tree-nav__item.is-expandable > .tree-nav__item-title::before {
+  position: absolute;
+  will-change: transform;
+  transition: transform 300ms ease;
+  font-family: 'ionicons';
+  color: #fff;
+  font-size: 1.1rem;
+  content: '\f125';
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-nav__item-title,
+.tree-nav__item-title:hover {
+  cursor: pointer;
+  display: block;
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.tree-nav__item-title .icon {
+  display: inline;
+  padding-left: 1.6rem;
+  margin-right: 0.8rem;
+  color: #666;
+  font-size: 18px;
+  position: relative;
+}
+
+.tree-nav__item-title .icon::before {
+  top: 0;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-nav__item-title::-webkit-details-marker {
+  display: none;
+}
+
+.highlight {
+  font-weight: bold;
+  text-align: center;
+  background-color: #5d4d67;
+  border-radius: 30px;
+  margin: 20px;
+}
+.highlight .icon {
+  color: white;
+}
+
+.unselected-title {
+  color: #676767;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.document-header-wrapper {
+  padding: 20px 25px;
+  background-color: white;
+  height: 70px;
+  box-shadow: 0 4px 2px -3px #e1e1e1;
+}
+
+.document-header-right {
+  float: right;
+}
+
+.icon-burger {
+  display: inline-block;
+  cursor: pointer;
+}
+.icon-burger > .bar1,
+.icon-burger > .bar2,
+.icon-burger > .bar3 {
+  width: 25px;
+  height: 3px;
+  background-color: #464646;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.title-input {
+  border: none;
+  font-size: 2.5rem;
+  width: 100%;
+}
