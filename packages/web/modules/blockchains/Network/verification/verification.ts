@@ -57,14 +57,10 @@ export const verifyNetworkSignature = async (
 
 const getNetworkFromChainId = (chainId: string): string => {
   switch (chainId) {
-    case '84531':
-      return 'base';
-    case '999':
-      return 'zora';
-    case '919':
-      return 'mode';
-    case '420':
+    case '20201022':
       return 'pegomainnet';
+    case '123456':
+      return 'pegotestnet';
     default:
       return '';
   }

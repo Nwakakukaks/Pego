@@ -11,7 +11,7 @@ interface Step4DeployProps {
 export default function Step4Deploy({ app }: Step4DeployProps) {
   return (
     <div>
-      <h4>Your Contact Is Ready</h4>
+      <h4>Your Contract Is Ready</h4>
       <div>You can now proceed to deploy the contract.</div>
     </div>
   );
