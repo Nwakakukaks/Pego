@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from './Footer.module.scss';
+import Link from 'next/link';
+import Image from 'next/image'
 
 const Footer = () => {
   return (
@@ -17,13 +19,13 @@ const Footer = () => {
             </p>
             <div className={styles.label}>Connect with us</div>
             <div className={styles.followUs}>
-              <a href="/#">
-                <img
+              <Link href="/#">
+                <Image
                   src="/assets/icons/email.svg"
                   alt="Email"
                   className={styles.iconWhite}
                 />
-              </a>
+              </Link>
             </div>
           </Col>
           <Col lg={8} md={8}>
@@ -33,24 +35,24 @@ const Footer = () => {
                   <b>Application</b>
                   <ul className={styles.list}>
                     <li>
-                      <a className={styles.link} href="/#learn-more">
+                      <Link className={styles.link} href="/#learn-more">
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className={styles.link} href="/#features">
+                      <Link className={styles.link} href="/#features">
                         Features
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className={styles.link} href="/#pricing">
+                      <Link className={styles.link} href="/#pricing">
                         Pricing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className={styles.link} href="/#beta">
+                      <Link className={styles.link} href="/#beta">
                         Beta Preview
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </Col>
@@ -63,14 +65,14 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a className={styles.link} href="/#">
+                      <Link className={styles.link} href="/#">
                         Developers
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className={styles.link} href="/#">
+                      <Link className={styles.link} href="/#">
                         API
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </Col>

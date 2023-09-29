@@ -6,6 +6,7 @@ import { App } from '@core/entities/app';
 import CreateAppDialog from '@components/dialogs/CreateAppDialog/CreateAppDialog';
 import { SelectedMenu } from '@core/enums/menu';
 import { fetchDapps } from '@services/web/appService';
+import Link from 'next/link'
 
 interface SideBarProps {
   isOpen: boolean;
@@ -65,9 +66,9 @@ const SideBar = ({
         style={{ marginLeft: `${isOpen ? '0' : '-360px'}` }}
       >
         <div className="sidebar">
-          <a href="/" >
+          <Link href="/" >
            <p className='mb-4 ml-3' >Pegora</p>
-          </a>
+          </Link>
           {isLoading && (
             <nav className="tree-nav">
               <Skeleton
