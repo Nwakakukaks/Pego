@@ -60,9 +60,9 @@ const Footer = () => {
                   <b>Documentation</b>
                   <ul className={styles.list}>
                     <li>
-                      <a className={styles.link} href="/#">
+                      <Link className={styles.link} href="/#">
                         Getting Started
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <Link className={styles.link} href="/#">
