@@ -98,7 +98,7 @@ const MainLanding: NextPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-10 mx-16 items-center">
             {/* Token Contract */}
-            <div className="ml-10">
+            <div className="">
               <Image alt="" src={token} width={400} height={300} />
             </div>
 

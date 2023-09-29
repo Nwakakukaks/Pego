@@ -22,7 +22,7 @@ const ConnectWallet = ({
         <Col md={1} sm={12}></Col>
         <Col md={3} sm={12}>
           <div className={styles.logo}>
-            <img src={t.logoIcon} alt="" />
+            
           </div>
         </Col>
         <Col md={5} sm={12}>
