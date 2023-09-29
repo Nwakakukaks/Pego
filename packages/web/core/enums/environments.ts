@@ -1,4 +1,4 @@
 export enum Environments {
-  PegoMainnet = 'PegoMainnet',
-  PegoTestnet = 'PegoTestnet',
+  PegoMainnet = 'Pego Mainnet',
+  PegoTestnet = 'Pego Testnet',
 }

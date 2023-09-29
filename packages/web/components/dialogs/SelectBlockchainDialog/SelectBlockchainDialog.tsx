@@ -29,7 +29,7 @@ export default function SelectBlockchainDialog({
         <div className={styles.selection}>
           <a onClick={() => onSelect(Blockchains.Network)}>
             <img src="/assets/icons/fantom-logo-round.svg" alt="Apothem" />
-            <span>Supported Networks: Optimism, Base, Zora, Mode</span>
+            <span>Supported Networks: Pego Mainnet, Pego Testnet</span>
             <span className={styles.muted}>MetaMask</span>
           </a>
         </div>

@@ -44,10 +44,10 @@ export default function AddVersionDialog({
         </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={() => onCancel()}>
+        <Button variant="secondary" style={{backgroundColor: '#1d1914'}} onClick={() => onCancel()}>
           Cancel
         </Button>
-        <Button variant="primary" onClick={() => onAddedVersion(input)}>
+        <Button variant="primary" style={{backgroundColor: '#ff9f1c'}} onClick={() => onAddedVersion(input)}>
           Add Version
         </Button>
       </Modal.Footer>

@@ -6,6 +6,6 @@ export const en = {
       'Welcome to Pegora Protocol. Sign in with Metamask wallet to get started.',
     connectButtonLabel: 'Connect Metamask',
     connectButtonLabelWC: 'Sign In WorldCoin',
-    logoIcon: '/assets/pegora/pego.png',
+    logoIcon: '',
   },
 };

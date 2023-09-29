@@ -1,6 +1,6 @@
 export enum Blockchains {
   None = '',
-  Network = 'Network',
+  Network = 'Pego Network',
 }
 
 export const BlockchainLabelMap = new Map<Blockchains, string>([

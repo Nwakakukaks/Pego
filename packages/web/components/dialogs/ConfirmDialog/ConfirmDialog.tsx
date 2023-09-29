@@ -30,10 +30,10 @@ export default function ConfirmDialog({
       </Modal.Header>
       <Modal.Body>{description}</Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={onCancel}>
+        <Button variant="secondary" style={{backgroundColor: '#1d1914'}} onClick={onCancel}>
           Cancel
         </Button>
-        <Button variant="primary" onClick={onConfirm ? onConfirm : () => {}}>
+        <Button variant="primary" style={{backgroundColor: '#ff9f1c'}} onClick={onConfirm ? onConfirm : () => {}}>
           Confirm
         </Button>
       </Modal.Footer>

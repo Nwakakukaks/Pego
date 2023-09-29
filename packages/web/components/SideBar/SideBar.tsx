@@ -65,12 +65,8 @@ const SideBar = ({
         style={{ marginLeft: `${isOpen ? '0' : '-360px'}` }}
       >
         <div className="sidebar">
-          <a href="/">
-            <img
-              src="/assets/blocks/logo.png"
-              alt="logo"
-              width={110}
-            />
+          <a href="/" >
+           <p className='mb-4 ml-3' >Pegora</p>
           </a>
           {isLoading && (
             <nav className="tree-nav">
@@ -86,12 +82,7 @@ const SideBar = ({
                 height={60}
                 animation="wave"
               />
-              <Skeleton
-                className={styles.skeletonLoader}
-                variant="rounded"
-                height={60}
-                animation="wave"
-              />
+            
             </nav>
           )}
           <a
@@ -115,7 +106,7 @@ const SideBar = ({
             />
           </a>
           <hr />
-          <h6>My Apps</h6>
+          <h6 className='mt-4 ml-2'>My Apps</h6>
           {!isLoading && (
             <nav className="tree-nav">
               {apps?.map((app) => {

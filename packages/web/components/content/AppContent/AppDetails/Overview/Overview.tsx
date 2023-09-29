@@ -75,7 +75,7 @@ export default function Overview({
       })) || [];
 
     // Add a default row for each environment if it doesn't already exist
-    [Environments.Optimism, Environments.Base, Environments.Zora, Environments.Mode].forEach((env) => {
+    [Environments.PegoMainnet, Environments.PegoTestnet,].forEach((env) => {
       if (!rows.find((row) => row.environment === env)) {
         rows.push({
           environment: env,
@@ -146,7 +146,7 @@ export default function Overview({
       } else {
         showMessage(
           'Deployment Incomplete',
-          'Your contract was deployed successfully but failed to update on Blocks.',
+          'Your contract was deployed successfully but failed to update on Pegora.',
         );
       }
 
@@ -188,7 +188,7 @@ export default function Overview({
                 <TableCell>{row.status}</TableCell>
                 <TableCell>
                   {row.transactionHash ? (
-                    <a
+                    <a rel='noreferrer'
                       target="_blank"
                       href={getExplorerTxUrl(
                         row.environment,
@@ -204,6 +204,7 @@ export default function Overview({
                 <TableCell>
                   {row.wallet ? (
                     <a
+                     rel='noreferrer'
                       target="_blank"
                       href={getExplorerAddressUrl(row.environment, row.wallet)}
                     >
