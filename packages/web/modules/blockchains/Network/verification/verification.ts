@@ -3,8 +3,8 @@ import Web3 from 'web3';
 
 // Define RPC endpoints for each network
 const rpcEndpoints: { [network: string]: string } = {
-  pegomainnet: 'https://pegorpc.com',
-  pegotestnet: 'https://rpc.pegotest.net/',
+  zetamainnet: 'https://zetarpc.com',
+  zetatestnet: 'https://rpc.ankr.com/zetachain_evm_athens_testnet',
   // Add more networks here as needed
 };
 
@@ -57,10 +57,10 @@ export const verifyNetworkSignature = async (
 
 const getNetworkFromChainId = (chainId: string): string => {
   switch (chainId) {
-    case '20201022':
-      return 'pegomainnet';
-    case '123456':
-      return 'pegotestnet';
+    case '00000':
+      return 'zetamainnet';
+    case '7001':
+      return 'zetatestnet';
     default:
       return '';
   }

@@ -146,7 +146,7 @@ export default function Overview({
       } else {
         showMessage(
           'Deployment Incomplete',
-          'Your contract was deployed successfully but failed to update on Pegora.',
+          'Your contract was deployed successfully but failed to update on Zhelp.',
         );
       }
 

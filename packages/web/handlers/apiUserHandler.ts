@@ -23,7 +23,7 @@ export const apiSignInUser = async (
     const { blockchain, walletAddress, signature } = params;
 
     if (blockchain === Blockchains.Network) {
-      const message = 'Blocks Login';
+      const message = 'Zhelp Login';
       const isSignatureValid = verifyNetworkSignature(
         message,
         signature,

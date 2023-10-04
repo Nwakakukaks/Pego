@@ -2,11 +2,11 @@ import { Blockchains } from '@core/enums/blockchains';
 import { Network } from './Network/providers/walletProvider';
 
 const blockchainNetworks = {
-  pegomainnet: {
-    [Blockchains.Network]: Network.PegoMainnet,
+  zetamainnet: {
+    [Blockchains.Network]: Network.ZetaMainnet,
   },
-  pegotestnet: {
-    [Blockchains.Network]: Network.PegoTestnet,
+  zetatestnet: {
+    [Blockchains.Network]: Network.ZetaTestnet,
   },
 };
 
@@ -18,11 +18,11 @@ export const getBlockchainNetwork = (
 };
 
 const blockchainNetworkLabels = {
-  pegomainnet: {
-    [Blockchains.Network]: 'Pego Mainnet',
+  zetamainnet: {
+    [Blockchains.Network]: 'Zeta Mainnet',
   },
-  pegotestnet: {
-    [Blockchains.Network]: 'Pego Testnet',
+  zetatestnet: {
+    [Blockchains.Network]: 'Zeta Testnet',
   },
 };
 

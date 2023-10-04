@@ -9,10 +9,10 @@ import SpeedIcon from "@mui/icons-material/Speed";
 import CodeIcon from "@mui/icons-material/Code";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Image from "next/image";
-import sub from "../public/assets/pegora/sub.png";
-import token from "../public/assets/pegora/token.png";
-import nft from "../public/assets/pegora/nft.png";
-import chain from "../public/assets/pegora/chain.png";
+import sub from "../public/assets/Zhelp/sub.png";
+import token from "../public/assets/Zhelp/token.png";
+import nft from "../public/assets/Zhelp/nft.png";
+import chain from "../public/assets/Zhelp/chain.png";
 
 const MainLanding: NextPage = () => {
   const handleEnter = async () => {
@@ -30,15 +30,15 @@ const MainLanding: NextPage = () => {
             <Col md={6} sm={12}>
               <div className={styles.introContainer}>
                 <h1>
-                  <div className={styles.mainTitle}>Pegora</div>
+                  <div className={styles.mainTitle}>Zhelp</div>
                 </h1>
                 <div className={styles.subtitle}>
                   Streamlined Smart Contract Development and Deployment Solution
                 </div>
                 <p style={{ color: "#888888" }}>
-                  Pegora is a blockchain application manager designed to provide
+                  Zhelp is a blockchain application manager designed to provide
                   you with comprehensive control over your smart contracts
-                  within the Pego Network ecosystem. With Pegora, you gain the
+                  within the Pego Network ecosystem. With Zhelp, you gain the
                   capability to seamlessly create, deploy, monitor, and gain
                   valuable insights for your smart contracts.
                 </p>
@@ -85,108 +85,63 @@ const MainLanding: NextPage = () => {
           </div>
         </Container>
 
-        <div className="container mx-auto">
-          <div className="mb-8 mt-10">
-            <h2 className="text-3xl mt-10 mb-2 text-white font-semibold text-center">
-              Contract Templates
-            </h2>
-            <p className= "font-semibold text-gray-400 text-center">
-              Explore a wide range of contract templates and customize them for
-              your needs.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-8 gap-y-10 mx-16 items-center">
-            {/* Token Contract */}
-            <div className="">
-              <Image alt="" src={token} width={400} height={300} />
-            </div>
-
-            <div className="bg-color-hey rounded-lg shadow-md">
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Token Contracts</h3>
-                <p className="text-gray-900 mb-2">
-                  ERC20 standard token contracts for seamless transactions on
-                  the blockchain.
-                </p>
-                <ul className="list-disc  font-semibold text-gray-700 pl-6">
-                  <li>Transfer and manage tokens securely</li>
-                  <li>Create your own digital currency</li>
-                  <li>Facilitate peer-to-peer transactions</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* NFT Contract */}
-            <div className="bg-color-hey rounded-lg shadow-md">
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">NFT Contracts</h3>
-                <p className="text-gray-900 mb-2">
-                  ERC721 standard NFT contracts for creating unique digital
+        <Container>
+          <Row
+            id="templates"
+            className="section-container"
+            style={{ minHeight: 'auto' }}
+          >
+            <Col md={12} sm={12}>
+              <h2 className="section-heading">Build with No Code Templates</h2>
+              <p className="section-subheading">
+                Build your contract from a growing collection of preset
+                templates you can use and customize
+              </p>
+            </Col>
+          </Row>
+          <Row className="feature-cards">
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Token</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  ERC20 standard token contract used for transactions.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>NFT</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  ERC721 standard NFT contract to house a collection of unique
                   assets.
-                </p>
-                <ul className="list-disc  font-semibold text-gray-700 pl-6">
-                  <li>Mint and manage non-fungible tokens</li>
-                  <li>Build your own digital collectibles</li>
-                  <li>Enable ownership tracking for unique items</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="ml-28">
-              <Image alt="" src={nft} width={300} height={300} />
-            </div>
-
-            {/* One-Time Subscription */}
-            <div className="ml-8">
-              <Image alt="" src={sub} width={400} height={300} />
-            </div>
-
-            <div className="bg-color-hey rounded-lg shadow-md">
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">
-                  One-Time Subscription
-                </h3>
-                <p className="text-gray-900 mb-2">
-                  Contracts to enable one-time payments for product
-                  subscriptions.
-                </p>
-                <ul className="list-disc  font-semibold text-gray-700 pl-6">
-                  <li>Offer one-time payment options</li>
-                  <li>Grant access to premium content or services</li>
-                  <li>Automate subscription handling</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Supply Chain Management */}
-            <div className="bg-color-hey rounded-lg shadow-md">
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">
-                  Supply Chain Management
-                </h3>
-                <p className="text-gray-900 mb-2">
-                  Contracts for tracking and verifying products at each supply
-                  chain stage.
-                </p>
-                <ul className="list-disc  font-semibold text-gray-700 pl-6">
-                  <li>Enhance product traceability</li>
-                  <li>Improve transparency and accountability</li>
-                  <li>Minimize fraud and errors</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="ml-28">
-              <Image alt="" src={chain} width={300} height={250} />
-            </div>
-
-            {/* Additional Contracts */}
-            {/* Add more contract descriptions here */}
-
-            {/* Placeholder for future contracts */}
-          </div>
-        </div>
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>One-Time Subscription</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  Accept one time payments for product subscription.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Supply Chain Management</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  Track and verify products at each stage of a supply chain.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+          </Row>
+          <Row className="section-container" style={{ minHeight: 'auto' }}>
+            <Col md={12} sm={12}>
+              <p className="section-subheading">
+                ...and many more coming soon.
+              </p>
+            </Col>
+          </Row>
+        </Container>
 
         <Container>
           <Row
@@ -234,7 +189,7 @@ const MainLanding: NextPage = () => {
           <Row
             id="pricing"
             className="section-container"
-            style={{ minHeight: "auto", marginTop: "60px" }}
+            style={{ minHeight: 'auto', marginTop: '60px' }}
           >
             <Col md={12} sm={12}>
               <h2 className="section-heading">Pricing</h2>
@@ -247,10 +202,10 @@ const MainLanding: NextPage = () => {
             <Col xs={12} sm={6} md={6} lg={4} className="pricing-card">
               <Card body>
                 <Card.Title>
-                  <p>Beta Release</p>
+                  <p>Beta Preview</p>
                 </Card.Title>
                 <hr />
-                <Card.Subtitle className="mb-4" style={{ textAlign: "center" }}>
+                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
                   <h6>Available Now</h6>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
@@ -270,7 +225,7 @@ const MainLanding: NextPage = () => {
                   <p>Standard Free</p>
                 </Card.Title>
                 <hr />
-                <Card.Subtitle className="mb-4" style={{ textAlign: "center" }}>
+                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
                   <h6>Coming Soon</h6>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
@@ -290,7 +245,7 @@ const MainLanding: NextPage = () => {
                   <p>Pro</p>
                 </Card.Title>
                 <hr />
-                <Card.Subtitle className="mb-4" style={{ textAlign: "center" }}>
+                <Card.Subtitle className="mb-4" style={{ textAlign: 'center' }}>
                   <h6>Coming Soon</h6>
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">

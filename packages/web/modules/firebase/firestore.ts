@@ -6,12 +6,12 @@ import { Environments } from '@core/enums/environments';
 import { UserWallet } from '@core/entities/userWallet';
 
 const appsCollection =
-  Config.environment === Environments.PegoMainnet ? 'PegoMainnet-apps' :
-  Config.environment === Environments.PegoTestnet ? 'PegoTestnet-apps' : 'unknown-apps';
+  Config.environment === Environments.ZetaMainnet ? 'ZetaMainnet-apps' :
+  Config.environment === Environments.ZetaTestnet ? 'ZetaTestnet-apps' : 'unknown-apps';
 
 const userWalletsCollection =
-  Config.environment === Environments.PegoMainnet ? 'PegoMainnet-userWallets' :
-  Config.environment === Environments.PegoTestnet ? 'PegoTestnet-userWallets' : 'unknown-userWallets';
+  Config.environment === Environments.ZetaMainnet ? 'ZetaMainnet-userWallets' :
+  Config.environment === Environments.ZetaTestnet ? 'ZetaTestnet-userWallets' : 'unknown-userWallets';
 
 
 export class FirestoreDB {

@@ -11,10 +11,10 @@ const Footer = () => {
         <Row>
           <Col lg={4} md={4}>
             <div className={styles.brand}>
-              <p>Pegora</p>
+              <p>Zhelp</p>
             </div>
             <p className={styles.appDescription}>
-              Pegora is a blockchain app manager that lets you create,
+              Zhelp is a blockchain app manager that lets you create,
               manage and view analytics for all your smart contracts on Pego network.
             </p>
             <div className={styles.label}>Connect with us</div>
