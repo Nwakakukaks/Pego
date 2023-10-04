@@ -87,8 +87,8 @@ const AppContent = ({
         )}
 
       {(currentApp.status === AppStatuses.Compiled ||
-        currentApp.status === AppStatuses.DeployedToPegoMainnet ||
-        currentApp.status === AppStatuses.DeployedToPegoTestnet ) && (
+        currentApp.status === AppStatuses.DeployedToZetaMainnet ||
+        currentApp.status === AppStatuses.DeployedToZetaTestnet ) && (
         <>
           <AppDetails
             app={currentApp}

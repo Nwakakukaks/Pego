@@ -75,7 +75,7 @@ const MainLanding: NextPage = () => {
               <div className="">
                 <iframe
                   width="100%"
-                  height="300"
+                  height="400"
                   src="https://www.youtube.com/embed/VIDEO_ID_HERE"
                   title="YouTube video player"
                   frameBorder="0"
@@ -104,7 +104,7 @@ const MainLanding: NextPage = () => {
               <Card body>
                 <Card.Title>Token</Card.Title>
                 <Card.Subtitle className="mb-2">
-                  ERC20 standard token contract used for transactions.
+                  ZRC20 standard token contract used for transactions.
                 </Card.Subtitle>
               </Card>
             </Col>
@@ -112,7 +112,7 @@ const MainLanding: NextPage = () => {
               <Card body>
                 <Card.Title>NFT</Card.Title>
                 <Card.Subtitle className="mb-2">
-                  ERC721 standard NFT contract to house a collection of unique
+                  ZRC721 standard NFT contract to house a collection of unique
                   assets.
                 </Card.Subtitle>
               </Card>
