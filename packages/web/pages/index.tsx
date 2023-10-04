@@ -38,7 +38,7 @@ const MainLanding: NextPage = () => {
                 <p style={{ color: "#888888" }}>
                   Zhelp is a blockchain application manager designed to provide
                   you with comprehensive control over your smart contracts
-                  within the Pego Network ecosystem. With Zhelp, you gain the
+                  within Zetachain. With Zhelp, you gain the
                   capability to seamlessly create, deploy, monitor, and gain
                   valuable insights for your smart contracts.
                 </p>
