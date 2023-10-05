@@ -13,12 +13,12 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract {{contractName}} is Ownable {
-    ERC20 public token;
+    ZRC20 public token;
     uint256 public rate;
 
     event TokensPurchased(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
 
-    constructor(uint256 _rate, ERC20 _token) {
+    constructor(uint256 _rate, ZRC20 _token) {
         require(_rate > 0);
         require(address(_token) != address(0));
 
@@ -60,7 +60,7 @@ export const TEMPLATE: Template = {
   templateId: '3',
   name: 'Crowd Sale Contract',
   description:
-    'A Crowd Sale Contract facilitates the raising of funds by selling a ERC20 token to investors at a specific price, in a defined timeframe, directly on the blockchain.',
+    'A Crowd Sale Contract facilitates the raising of funds by selling a ZRC20 token to investors at a specific price, in a defined timeframe, directly on the blockchain.',
   tags: ['Token', 'CrowdSale'],
   code: CODE.trim(),
   inputs: [],

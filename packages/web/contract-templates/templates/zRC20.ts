@@ -10,8 +10,8 @@ pragma solidity 0.8.18;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract {{contractName}} is ERC20 {
-    constructor(uint256 initialSupply) ERC20("{{tokenName}}", "{{symbol}}") {
+contract {{contractName}} is ZRC20 {
+    constructor(uint256 initialSupply) ZRC20("{{tokenName}}", "{{symbol}}") {
         _mint(msg.sender, initialSupply);
     }
 }
@@ -19,10 +19,10 @@ contract {{contractName}} is ERC20 {
 
 export const TEMPLATE: Template = {
   templateId: '1',
-  name: 'ERC20 Token Contract',
+  name: 'ZRC20 Token Contract',
   description:
-    'ERC20 is an standard for fungible assets, outlining a common list of rules for tokens to follow, enabling interoperability across different interfaces and dApps.',
-  tags: ['Token', 'ERC20'],
+    'ZRC20 is an standard for fungible assets, outlining a common list of rules for tokens to follow, enabling interoperability across different interfaces and dApps.',
+  tags: ['Token', 'ZRC20'],
   code: CODE.trim(),
   inputs: [
     {

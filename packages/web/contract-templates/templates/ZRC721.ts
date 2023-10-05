@@ -19,10 +19,10 @@ pragma solidity 0.8.18;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract {{contractName}} is ERC721 {
+contract {{contractName}} is ZRC721 {
     string private _baseTokenURI;
 
-    constructor(string memory baseTokenURI) ERC721("{{tokenName}}", "{{symbol}}") {
+    constructor(string memory baseTokenURI) ZRC721("{{tokenName}}", "{{symbol}}") {
         _baseTokenURI = baseTokenURI;
     }
 
@@ -34,10 +34,10 @@ contract {{contractName}} is ERC721 {
 
 export const TEMPLATE: Template = {
   templateId: '2',
-  name: 'ERC721 NFT Contract',
+  name: 'ZRC721 NFT Contract',
   description:
-    'ERC721 is an open standard for creating non-fungible tokens (NFTs) on the blockchain, allowing for the ownership and transfer of unique assets.',
-  tags: ['NFT', 'ERC721'],
+    'ZRC721 is an open standard for creating non-fungible tokens (NFTs) on the blockchain, allowing for the ownership and transfer of unique assets.',
+  tags: ['NFT', 'ZRC721'],
   code: CODE.trim(),
   inputs: [
     {
