@@ -76,7 +76,7 @@ const MainLanding: NextPage = () => {
                 <iframe
                   width="100%"
                   height="400"
-                  src="https://www.youtube.com/embed/VIDEO_ID_HERE"
+                  src="https://youtu.be/v7slSReQcRk?si=7Rg41BbgFSc2Xn_k"
                   title="YouTube video player"
                   frameBorder="0"
                 ></iframe>
