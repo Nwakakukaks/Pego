@@ -31,7 +31,7 @@ export interface Wallet {
 export enum Network {
   ZetaMainnet = 'ZetaMainnet',
   ZetaTestnet = 'ZetaTestnet',
-  Unknown = 'Unknown'
+ 
 }
 
 export const getWallet = async (): Promise<Wallet | null> => {
@@ -47,11 +47,10 @@ export const getWallet = async (): Promise<Wallet | null> => {
 };
 
 export const getNetwork = (): Network => {
-  return window.ethereum.networkVersion === '00000'
-    ? Network.ZetaMainnet
-    : window.ethereum.networkVersion === '7001'
+  return window.ethereum.networkVersion === '7001'
     ? Network.ZetaTestnet
-    : Network.Unknown
+    : Network.ZetaMainnet
+    
     
 };
 
