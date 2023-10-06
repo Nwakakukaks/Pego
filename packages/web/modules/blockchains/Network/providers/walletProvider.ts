@@ -81,7 +81,7 @@ export const getExplorerAddressUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.ZetaMainnet) {
-    return `https://scan.Zeta.network/address/${hash}`;
+    return `https://zetachain-athens-3.blockscout.com/address/${hash}`;
   }
   if (environment === Environments.ZetaTestnet) {
     return `https://zetachain-athens-3.blockscout.com/address/${hash}`;
@@ -94,7 +94,7 @@ export const getExplorerTxUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.ZetaMainnet) {
-    return `https://scan.Zeta.network/tx/${hash}`;
+    return `https://zetachain-athens-3.blockscout.com/tx/${hash}`;
   }
   if (environment === Environments.ZetaTestnet) {
     return `https://zetachain-athens-3.blockscout.com/tx/${hash}`;
