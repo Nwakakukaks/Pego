@@ -84,7 +84,7 @@ export const getExplorerAddressUrl = (
     return `https://scan.Zeta.network/address/${hash}`;
   }
   if (environment === Environments.ZetaTestnet) {
-    return `https://explorer.zetachain.com/address/${hash}`;
+    return `https://zetachain-athens-3.blockscout.com/address/${hash}`;
   }
   return null;
 };
@@ -97,7 +97,7 @@ export const getExplorerTxUrl = (
     return `https://scan.Zeta.network/tx/${hash}`;
   }
   if (environment === Environments.ZetaTestnet) {
-    return `https://explorer.zetachain.com/tx/${hash}`;
+    return `https://zetachain-athens-3.blockscout.com/tx/${hash}`;
   }
   return null;
 };
