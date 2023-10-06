@@ -19,10 +19,10 @@ pragma solidity 0.8.18;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract {{contractName}} is ZRC721 {
+contract {{contractName}} is ERC721 {
     string private _baseTokenURI;
 
-    constructor(string memory baseTokenURI) ZRC721("{{tokenName}}", "{{symbol}}") {
+    constructor(string memory baseTokenURI) ERC721("{{tokenName}}", "{{symbol}}") {
         _baseTokenURI = baseTokenURI;
     }
 

@@ -95,7 +95,7 @@ const MainLanding: NextPage = () => {
               <h2 className="section-heading">Build with No Code Templates</h2>
               <p className="section-subheading">
                 Build your contract from a growing collection of preset
-                templates you can use and customize
+                templates you can use and customize easily to suit your dapp
               </p>
             </Col>
           </Row>
@@ -230,8 +230,8 @@ const MainLanding: NextPage = () => {
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
                   <ul className="pricing-list">
-                    <li>Up to 3 apps</li>
-                    <li>Up to 6 linked wallets</li>
+                    <li>Up to 5 apps</li>
+                    <li>Up to 5 linked wallets</li>
                     <li>Basic Analytics</li>
                   </ul>
                   <hr />
@@ -250,7 +250,7 @@ const MainLanding: NextPage = () => {
                 </Card.Subtitle>
                 <Card.Subtitle className="mb-2">
                   <ul className="pricing-list">
-                    <li>Up to 10 apps</li>
+                    <li>Unlimited Apps</li>
                     <li>Up to 20 linked wallets</li>
                     <li>Advanced Analytics</li>
                   </ul>

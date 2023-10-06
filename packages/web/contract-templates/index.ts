@@ -1,5 +1,5 @@
 import templateCrowdSale from './templates/CrowdSale';
-import templateERC20 from './templates/zRC20';
+import templateERC20 from './templates/ZRC20';
 import templateERC721 from './templates/ZRC721';
 import templateOneTimeSubscription from './templates/Subscription';
 

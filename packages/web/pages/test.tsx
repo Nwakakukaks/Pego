@@ -27,7 +27,7 @@ const TestPage: NextPage = () => {
     // console.log('abi');
     // console.log(abi);
 
-    const blockchain = Blockchains.Zeta;
+    const blockchain = Blockchains.Network;
     const walletAddress = 'testwallet1';
     const signature = 'testsignature1';
 

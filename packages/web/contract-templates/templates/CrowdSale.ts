@@ -13,12 +13,12 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract {{contractName}} is Ownable {
-    ZRC20 public token;
+    ERC20 public token;
     uint256 public rate;
 
     event TokensPurchased(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
 
-    constructor(uint256 _rate, ZRC20 _token) {
+    constructor(uint256 _rate, ERC20 _token) {
         require(_rate > 0);
         require(address(_token) != address(0));
 
