@@ -60,7 +60,7 @@ Deploy your contracts on the ZetaChain mainnet (soon when it's live) and testnet
     <img width="600px" src="docs/images/pricing.png" alt="">
 </p>
 
-While we strive to keep the majority of features free so anyone can experience and use BlockFabric, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
+While we strive to keep the majority of features free so anyone can experience and use Zhelp, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
 
 **Community Contributed Templates**: We are also considering to open up our templates collection so other developers can build and share their templates and possibly earn commission from their use.
 
@@ -91,7 +91,7 @@ While we strive to keep the majority of features free so anyone can experience a
 </p>
 
 #### Connect Wallet & Handshaking
-- Users first connect to XDC Blockchain using a wallet provider like XDCPay. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
+- Users first connect to Zetachain using a wallet provider like Metamask. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
 
 #### Creating an App
 - Users would create their first app after accessing the platform. An app is a container that will hold and manage the smart contract. Users can create multiple apps.
