@@ -60,7 +60,7 @@ export const TEMPLATE: Template = {
   templateId: '3',
   name: 'Crowd Sale Contract',
   description:
-    'A Crowd Sale Contract facilitates the raising of funds by selling a ZRC20 token to investors at a specific price, in a defined timeframe, directly on the blockchain.',
+    'A Crowd Sale Contract facilitates the raising of funds by selling a ERC20 token to investors at a specific price, in a defined timeframe, directly on the blockchain.',
   tags: ['Token', 'CrowdSale'],
   code: CODE.trim(),
   inputs: [],

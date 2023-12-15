@@ -1,9 +1,9 @@
 export const en = {
   network: {
-    connectWalletTitle: 'Zhelp',
+    connectWalletTitle: 'Pegora',
     connectWalletSubtitle: 'Connect wallet to begin.',
     connectWalletDescription:
-      'Welcome to Zhelp. Sign in with Metamask wallet to get started.',
+      'Welcome to Pegora. Sign in with Metamask wallet to get started.',
     connectButtonLabel: 'Connect Metamask',
     connectButtonLabelWC: 'Sign In WorldCoin',
     logoIcon: '',

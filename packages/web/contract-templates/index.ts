@@ -1,11 +1,11 @@
 import templateCrowdSale from './templates/CrowdSale';
-import templateZRC20 from './templates/zRC20';
-import templateZRC721 from './templates/ZRC721';
+import templateERC20 from './templates/ERC20';
+import templateERC721 from './templates/ERC721';
 import templateOneTimeSubscription from './templates/Subscription';
 
 export const TEMPLATES = [
-  templateZRC20,
-  templateZRC721,
+  templateERC20,
+  templateERC721,
   templateCrowdSale,
   templateOneTimeSubscription,
 ];
