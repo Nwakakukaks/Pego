@@ -1,5 +1,5 @@
-## Zhelp
-Zhelp is a smart contract deployer and manager tool for zetachain, Equipped with no-code templates,
+## Pegora
+Pegora is a smart contract deployer and manager tool for Pego Network, Equipped with no-code templates,
 seamless wallet integrations, and robust analytical tools, 
 it offers a user-friendly solution for creating, deploying, and overseeing smart contracts.
 
@@ -15,17 +15,17 @@ Project Objective: Our goal is to empower and help individuals with the ability 
 
 ### Source of Inspiration:
 
-In our quest for innovation, we posed a fundamental question: "How can we truly democratize the incredible capabilities of Zetachain, ensuring that everyone, regardless of their technical background, can harness its immense benefits?"
+In our quest for innovation, we posed a fundamental question: "How can we truly democratize the incredible capabilities of Pego network, ensuring that everyone, regardless of their technical background, can harness its immense benefits?"
 
-Our inspiration for Zhelp ignited from the profound realization of Zetachain's boundless potential. It's a platform that promises to solves the problems of “cross-chain” and “multi-chain” and to supports a truly fluid, multi-chain crypto ecosystem. Yet, this potential remains locked behind the intricate complexities of developing and managing decentralized applications (dApps).
+Our inspiration for Pegora ignited from the profound realization of Pego network's boundless potential. It's a platform that promises to solves the problems of “cross-chain” and “multi-chain” and to supports a truly fluid, multi-chain crypto ecosystem. Yet, this potential remains locked behind the intricate complexities of developing and managing decentralized applications (dApps).
 
-Our mission was clear: create a solution for both seasoned developers and visionary non-technical individuals, bridging the gap between innovative ideas and functional dApps, and unlocking the full potential of Zetachain.
+Our mission was clear: create a solution for both seasoned developers and visionary non-technical individuals, bridging the gap between innovative ideas and functional dApps, and unlocking the full potential of Pego network.
 
-Zhelp is our answer to this challenge—an ingenious solution that empower everyone to effortlessly create, deploy, manage, and gain insights from their smart contracts. It bridges technical gap, making Zetachain accessible to all. With Zhelp, you can seamlessly transition from idea to functional dApp, harnessing the transformative power of Zetachain to shape a decentralized future for everyone.
+Pegora is our answer to this challenge—an ingenious solution that empower everyone to effortlessly create, deploy, manage, and gain insights from their smart contracts. It bridges technical gap, making Pego network accessible to all. With Pegora, you can seamlessly transition from idea to functional dApp, harnessing the transformative power of Pego network to shape a decentralized future for everyone.
 
 ### About the Initiative
 A Simplified Approach to Smart Contract Management.
-Zhelp is an intuitive blockchain application manager tailored for Zetachain. It streamlines the process of creating, deploying, managing, and analyzing smart contracts, catering to both novices and seasoned blockchain engineers.
+Pegora is an intuitive blockchain application manager tailored for Pego network. It streamlines the process of creating, deploying, managing, and analyzing smart contracts, catering to both novices and seasoned blockchain engineers.
 
 Equipped with no-code templates, seamless wallet integrations, and robust analytical tools, Blocks levels the playing field for both beginners and advanced users, ensuring that blockchain technology becomes accessible to all and heralding a more decentralized digital era.
 
@@ -60,7 +60,7 @@ Deploy your contracts on the ZetaChain mainnet (soon when it's live) and testnet
     <img width="600px" src="docs/images/pricing.png" alt="">
 </p>
 
-While we strive to keep the majority of features free so anyone can experience and use Zhelp, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
+While we strive to keep the majority of features free so anyone can experience and use Pegora, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
 
 **Community Contributed Templates**: We are also considering to open up our templates collection so other developers can build and share their templates and possibly earn commission from their use.
 
@@ -91,7 +91,7 @@ While we strive to keep the majority of features free so anyone can experience a
 </p>
 
 #### Connect Wallet & Handshaking
-- Users first connect to Zetachain using a wallet provider like Metamask. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
+- Users first connect to Pego network using a wallet provider like Metamask. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
 
 #### Creating an App
 - Users would create their first app after accessing the platform. An app is a container that will hold and manage the smart contract. Users can create multiple apps.
