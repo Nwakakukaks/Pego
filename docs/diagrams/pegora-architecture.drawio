@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-06T14:39:59.171Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="bjA_r6dkMwOp07IQKA0c" version="22.0.3" type="device">
+<mxfile host="app.diagrams.net" modified="2023-12-15T15:48:25.060Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="e02bXjkBOADLSCKbX2MD" version="22.1.11" type="device">
   <diagram id="epOP3TGJAgzoHS26kM29" name="Page-1">
-    <mxGraphModel dx="1384" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1887" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -106,7 +106,7 @@
         <mxCell id="rEMxlO5N6JhFpVhyN6K3-3" value="Metamask" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="47.5" y="375" width="145" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="rEMxlO5N6JhFpVhyN6K3-4" value="ZetaChain" style="text;strokeColor=#00CC00;align=center;fillColor=#047125;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="1" vertex="1">
+        <mxCell id="rEMxlO5N6JhFpVhyN6K3-4" value="Pego Network" style="text;strokeColor=#CC6600;align=center;fillColor=#994C00;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#ffffff;" parent="1" vertex="1">
           <mxGeometry x="204.5" y="400" width="110.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="BHBGsUImjJVW94w3mSbL-5" value="FIREBASE" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
