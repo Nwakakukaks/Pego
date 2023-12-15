@@ -67,7 +67,7 @@ const SideBar = ({
       >
         <div className="sidebar">
           <Link href="/" >
-           <p className='mb-4 ml-3' >Zhelp</p>
+           <p className='mb-4 ml-3' >Pegora</p>
           </Link>
           {isLoading && (
             <nav className="tree-nav">
