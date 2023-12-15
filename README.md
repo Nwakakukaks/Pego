@@ -31,6 +31,10 @@ Equipped with no-code templates, seamless wallet integrations, and robust analyt
 
 ### Noteworthy Features
 
+<p align="center">
+    <img width="600px" src="docs/images/templates.png" alt="Intro Screenshot">
+</p>
+
 - No Code Contract Builder
 
 Craft your contracts using an ever-expanding library of pre-set contract templates that can be customized without any coding expertise.
