@@ -4,7 +4,7 @@ seamless wallet integrations, and robust analytical tools,
 it offers a user-friendly solution for creating, deploying, and overseeing smart contracts.
 
 ### website
-https://zhelp.vercel.app/
+https://pegora.vercel.app/
 
 <p align="center">
     <img width="600px" src="docs/images/home.png" alt="Intro Screenshot">
@@ -45,7 +45,7 @@ Compile your smart contracts directly within the platform.
 
 - Built-in Contract Deployer
 
-Deploy your contracts on the ZetaChain mainnet (soon when it's live) and testnet with a simple click.
+Deploy your contracts on the Pego mainnet (soon when it's live) and testnet with a simple click.
 
 **Coming Soon**
 - For advanced users: Build contracts with custom code.
