@@ -15,7 +15,7 @@ export const authenticateUser = async (
   try {
     let signature = '';
     if (blockchain === Blockchains.Network) {
-      signature = await signNetworkSignature('Zhelp Login');
+      signature = await signNetworkSignature('Pegora Login');
     } else {
       // Randomize signature to avoid predictability
       signature = generateUUID();

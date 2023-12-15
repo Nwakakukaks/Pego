@@ -9,10 +9,10 @@ import SpeedIcon from "@mui/icons-material/Speed";
 import CodeIcon from "@mui/icons-material/Code";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Image from "next/image";
-import sub from "../public/assets/Zhelp/sub.png";
-import token from "../public/assets/Zhelp/token.png";
-import nft from "../public/assets/Zhelp/nft.png";
-import chain from "../public/assets/Zhelp/chain.png";
+import sub from "../public/assets/pegora/sub.png";
+import token from "../public/assets/pegora/token.png";
+import nft from "../public/assets/pegora/nft.png";
+import chain from "../public/assets/pegora/chain.png";
 
 const MainLanding: NextPage = () => {
   const handleEnter = async () => {
@@ -30,15 +30,15 @@ const MainLanding: NextPage = () => {
             <Col md={6} sm={12}>
               <div className={styles.introContainer}>
                 <h1>
-                  <div className={styles.mainTitle}>Zhelp</div>
+                  <div className={styles.mainTitle}>Pegora</div>
                 </h1>
                 <div className={styles.subtitle}>
                   Streamlined Smart Contract Development and Deployment Solution
                 </div>
                 <p style={{ color: "#888888" }}>
-                  Zhelp is a blockchain application manager designed to provide
+                  Pegora is a blockchain application manager designed to provide
                   you with comprehensive control over your smart contracts
-                  within Zetachain. With Zhelp, you gain the
+                  within Pego Network. With Pegora, you gain the
                   capability to seamlessly create, deploy, monitor, and gain
                   valuable insights for your smart contracts.
                 </p>
@@ -104,7 +104,7 @@ const MainLanding: NextPage = () => {
               <Card body>
                 <Card.Title>Token</Card.Title>
                 <Card.Subtitle className="mb-2">
-                  ZRC20 standard token contract used for transactions.
+                  ERC20 standard token contract used for transactions.
                 </Card.Subtitle>
               </Card>
             </Col>
@@ -112,7 +112,7 @@ const MainLanding: NextPage = () => {
               <Card body>
                 <Card.Title>NFT</Card.Title>
                 <Card.Subtitle className="mb-2">
-                  ZRC721 standard NFT contract to house a collection of unique
+                  ERC721 standard NFT contract to house a collection of unique
                   assets.
                 </Card.Subtitle>
               </Card>

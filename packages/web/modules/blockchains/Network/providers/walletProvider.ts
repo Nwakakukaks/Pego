@@ -29,8 +29,8 @@ export interface Wallet {
 }
 
 export enum Network {
-  ZetaMainnet = 'ZetaMainnet',
-  ZetaTestnet = 'ZetaTestnet',
+  PegoMainnet = 'PegoMainnet',
+  PegoTestnet = 'PegoTestnet',
  
 }
 
@@ -47,9 +47,9 @@ export const getWallet = async (): Promise<Wallet | null> => {
 };
 
 export const getNetwork = (): Network => {
-  return window.ethereum.networkVersion === '7001'
-    ? Network.ZetaTestnet
-    : Network.ZetaMainnet
+  return window.ethereum.networkVersion === '20201022'
+    ? Network.PegoMainnet
+    : Network.PegoTestnet
     
     
 };
@@ -80,11 +80,11 @@ export const getExplorerAddressUrl = (
   environment: Environments,
   hash: string,
 ): string => {
-  if (environment === Environments.ZetaMainnet) {
-    return `https://zetachain-athens-3.blockscout.com/address/${hash}`;
+  if (environment === Environments.PegoMainnet) {
+    return `https://scan.pego.network/address/${hash}`;
   }
-  if (environment === Environments.ZetaTestnet) {
-    return `https://zetachain-athens-3.blockscout.com/address/${hash}`;
+  if (environment === Environments.PegoTestnet) {
+    return `https://scan.pego.network/address/${hash}`;
   }
   return null;
 };
@@ -93,11 +93,11 @@ export const getExplorerTxUrl = (
   environment: Environments,
   hash: string,
 ): string => {
-  if (environment === Environments.ZetaMainnet) {
-    return `https://zetachain-athens-3.blockscout.com/tx/${hash}`;
+  if (environment === Environments.PegoMainnet) {
+    return `https://scan.pego.network/tx/${hash}`;
   }
-  if (environment === Environments.ZetaTestnet) {
-    return `https://zetachain-athens-3.blockscout.com/tx/${hash}`;
+  if (environment === Environments.PegoTestnet) {
+    return `https://scan.pego.network/tx/${hash}`;
   }
   return null;
 };
@@ -130,10 +130,10 @@ export const deployContract = async (
 
   // check if the network matches the selected environment
   if (
-    (environment === Environments.ZetaMainnet &&
-      currentNetwork !== Network.ZetaMainnet) ||
-    (environment === Environments.ZetaTestnet &&
-      currentNetwork !== Network.ZetaTestnet)
+    (environment === Environments.PegoMainnet &&
+      currentNetwork !== Network.PegoMainnet) ||
+    (environment === Environments.PegoTestnet &&
+      currentNetwork !== Network.PegoTestnet)
   ) {
     throw new Error(
       'The connected network does not match the selected environment',
