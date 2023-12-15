@@ -75,7 +75,7 @@ export default function Overview({
       })) || [];
 
     // Add a default row for each environment if it doesn't already exist
-    [Environments.ZetaMainnet, Environments.ZetaTestnet,].forEach((env) => {
+    [Environments.PegoMainnet, Environments.PegoTestnet,].forEach((env) => {
       if (!rows.find((row) => row.environment === env)) {
         rows.push({
           environment: env,
